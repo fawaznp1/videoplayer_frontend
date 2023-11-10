@@ -1,0 +1,252 @@
+React - Front end Technology
+-------------------------------
+-to create UI(User Interface)
+
+UI :
+----------
+The point where the user -computer (SW) interaction/communication takeplace
+
+- React make use of JS libraries to create UI/Front end
+-libraries : predefined codes- to do particular task
+-Framework : predefined codes - highly restricted
+[refer libraries vs Framework]
+
+Features of React -
+------------
+1.To create UI
+2.Single page application : 
+    -Web application or website that interact with dynamically rewriting the current webpage with new datas from the webserver instead of the default method of loading all webpage separately.
+3.Declarative : 
+    -Does not access directly DOM(Document Object Model)
+    -Instead, it creates and manages Virtual DOM tree that is later updated in real DOM
+4.Virtual DOM : 
+    -An exact copy of DOM ,React can update only what has changed in VDOM and then render on screen.This way browser have less process.VDOM is created by React.
+    -Diffin : process of comparing VDOM with real DOM
+    -Reconcilation ; process of updatintg real DOM.
+5.Immutable variable : 
+    -Cannot change the value of an Object.
+6.Pure Function : 
+    -Functions that accept Immutable variable and return an Object. - result only depend on variable.
+    -eg : React Components
+7.Data Sharing : Unidirection -parent -child
+8.Language : JSX - JS XML (combination of js ,html,css)
+9.Transpiling : Process of converting JSX into html,css,js
+    -BABEL : convert
+
+
+
+----------------------------------
+How to create a project in React
+-----------------------------------
+
+ 
+npx create-react-app projectname
+ (npx - node package execute - help to execute
+ npm - node package manager - help to install)
+
+
+npm i -g npm   - Globalization
+1.npx create-react-app projectname  - (Happy hacking!)
+2.cd projectname
+3.npm start
+
+--------------------------------
+--------------------------------
+
+11/10
+
+---------------------------------
+---------------------------------
+
+Files : 
+1.readme.md : hold description of the application
+2.package.json - holds npm configuration - dependencies.
+3.package-lock.json : it holds versions of installed libraries.
+4. .gitigonre - hlod Files that need not tobe pushed into git 
+5.node_modules - its a copy of installed libraries.
+6.public - holds those Files 
+7.
+8.reportWebVitals : used to measure performance
+
+
+Component : basic unit of react application
+React Component is a function which returns HTML elements.-
+    -should start with capital letter
+    -
+    1.export
+
+
+
+
+
+13/10
+-----------------------------------
+React event handling:
+There are three ways to handle events in React applications:
+html onclick ="function()"
+jsx onclick={}
+function without arguement
+    onclick = {function name}
+    function with arguments
+    onClick={()=>function name(arg)}
+
+
+How to get value from input box:
+----
+html=input.value
+
+onChange(callback)-call 
+
+
+conditional rendering:
+---------------------------------
+Render : loading to browser
+
+1.if - truthy -&&
+2.if else - ternary- ?:
+
+
+react state :
+-----------------
+    -State is an object which stores properties of a react class Component
+    -When the state changes the entire component re-render.
+
+
+
+
+Life cycle of a react class component:
+------------------------------------
+1.mounting phase : component added to DOM
+-constructor()-
+-getDerivedStateFromProps()-
+-render()
+-componentDidMount
+2.updating phase : editing of component
+-getDerivedStateFromProps()-
+-shouldComponentUpdate -true or false
+-render()
+-getSnapShotBeForUpdate()
+-componentDidUpdate()
+3.Unmounting phase : removal of component from DOM
+-componentWillUnmount()  :
+    invoked just before the unmount to cancel if there any network is done etc...
+    inshot it cleanup
+
+
+------------------------------------------------
+16/10
+---------------------------------------------
+
+Functional component are also called stateless component
+Class component are also called stateful component
+
+Hooks:
+------
+-To provide state and lifecycle to Functional components.
+-A hook is a function that lets you "hook into" React features. For example, useState is a hook that enables your components to have local state.
+
+Rules:
+--------
+1.import hooks from react library to react Functional component
+2.can call hook only at the top section of then functional component
+3.Cannot use hooks on conditional bases.
+
+
+There are different types of hooks:
+--------------------------------
+1.predefined hooks                      2.custom hooks
+eg:
+-useState()  :                           
+    -to create state in functional component
+    -returns - state and function which can change the state.
+    -can store - string ,number, object ,array
+
+
+
+17/10
+----------------------------------
+e.target.value
+
+
+-----------
+
+
+06/11
+--------------
+
+
+
+1.Redux : unrelated sharing data
+
+2.Context api : unrelated sharing data
+3.State-lifting method: TO connect with siblings()
+
+
+
+07/11
+-------------------
+watchhistory refresh
+nothing to display
+
+
+09/11
+------------------------
+
+Drag and drop mechanism:
+    It can be achieved using 5 properties 
+    1.Dragable
+    2.ondragstart
+    3.dropable
+    4.ondragover
+    5.ondrop
+
+    1.Dragable:
+        When added as an attribute to an element ,makes the target element to become dragable.
+    2.ondragstart:
+        is called immeediately the element drag.usually the content to be dragged above the set at the point.
+    3.dropable:
+        when added has an attribute to an element ,makes the target become dropable.
+    4.ondragover:
+        when added has eventListener where the dragged content will be dropped.In another words it is used to specify where the content to be dropped. 
+    5.ondrop:
+        is called immeediately the dragged content is released on the element that contains ondrag eventListener.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
