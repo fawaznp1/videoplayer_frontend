@@ -8,13 +8,13 @@ function Footer() {
         <div className='website' style={{width:'400px'}}>
         <h4>
         <i class="fa-solid fa-video text-warning me-3" style={{color:"blue"}}></i>
-          Video Player
+          Media Player
         </h4>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non libero, a voluptas inventore dolorum nobis nam expedita consectetur magni aliquam explicabo quis odit necessitatibus dignissimos fugiat quibusdam perferendis amet culpa?
           </p>
           <p>
-            ahsdbfh asjdfbas dfjhs sjhjsahsd JASFF
+            ©️2025 @Media player 
           </p>
         </div>
         <div className='links d-flex flex-column'>

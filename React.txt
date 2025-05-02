@@ -212,9 +212,94 @@ Drag and drop mechanism:
         is called immeediately the dragged content is released on the element that contains ondrag eventListener.
 
 
+10/11
+-----------------------
+
+
+Props Drilling:
+
+	-When parent component generate its state  and passes it down has props to its styled components that do not consume the props instead the only passes it down to another component that finally consume set.
+	-Props which neither created nor consumed is called elongated props.(as mentioned earlier props is an object)
+
+
+Coupling:(dependancy of components)
+	-its directly proportional to props drilling.
+	
+				------------------------------------------------------------------------
+
+					Redux : A state management system(data sharing)
+
+				------------------------------------------------------------------------
+
+	-Redux is a JS library.
+	-can be used in other frontend technologies.
+	-mechanism:
+		 action -> reducer -> store -> component ->			(*in figure it will be like a cycle in one direction.)
+			
+			-store:
+				states are created 
+				useSelector hook used to accces
+				globally accessible.(Provide tag).
+			-components:
+				components can directly access the store but cannot change the value of state.
+				-dispatch:
+					-components calling action are called dispatch.
+			-action:
+				logics to update state.
+				-payload:
+					response from the action file.further it will send to reducer.
+			-reducer:
+				reducer can only change state.
+-------------------------
+11/11
+--------------
+Redux toolkit:
+-to install ConfigureStore function.
+
+CreateAction :to create action file to use a standalone method.(not used when we use toolkit)
+
+
+createSlice:
+
+	A function that accepts an initial state, an object full of reducer functions, and a "slice name", and automatically generates action creators and action types that correspond to the reducers and state.
+
+$        //reduce and reducers key are not same.
 
 
 
+
+---------------------------------
+16/11
+------------------------------
+fakestoreapi /dummyjsonapi
+
+
+-------------------
+17/11
+
+
+State lifting : is used to connect siblings
+
+
+
+
+22/11
+---------------------------
+
+npm i react-router-dom   :
+
+installing router-dom to set path.
+
+<BrowseRouter></BrowseRouter>
+<Routes/>
+<Route/>
+
+
+
+
+
+	
+	
 
 
 

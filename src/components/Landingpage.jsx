@@ -13,7 +13,7 @@ function Landingpage() {
     <Col lg={5}>
       <h3>Welcome To <span className='text-warning'> Media player</span></h3>
       <p className='mt-3'>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur nemo fugiat magni, voluptates ea unde libero repellendus iure dolore quis. Nesciunt sapiente culpa non numquam ullam iusto optio dolore pariatur.
+      Media Player is your personal hub for enjoying music anytime, anywhere. Browse, play, and organize your favorite songs with ease. With a clean design and smooth controls, it’s built to make your listening experience simple and enjoyable.
       </p>
       <button className='btn btn-warning mt-5' onClick={()=>navigateByUrl('/home')}>Get Started</button>
     </Col>
@@ -26,32 +26,29 @@ function Landingpage() {
     <h3>Features</h3>
    <div className='cards d-flex justify-content-evenly align-items-center w-100'>
    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://i.pinimg.com/originals/2d/2d/51/2d2d51ba3d86b27b221abb162c24edc0.gif" />
+      <Card.Img style={{ height: '215px', objectFit: 'cover' }}  variant="top" src="https://i.pinimg.com/originals/2d/2d/51/2d2d51ba3d86b27b221abb162c24edc0.gif" />
       <Card.Body>
         <Card.Title>Managing Video</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Easily upload, watch, and organize your video collection in one place.
         </Card.Text>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://i.pinimg.com/originals/48/c6/12/48c61262980bb7dbf2557940d41c7d0b.gif" />
+      <Card.Img style={{ height: '215px', objectFit: 'cover' }} variant="top" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHRsYjMzYjhpbmg2NDFhcmRwMzJkemJ0NTJ0cno5bmNkbXZvMHh3YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EwKfD3kAzUghvQiTuw/giphy.gif" />
       <Card.Body>
         <Card.Title>Categorised Video</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Browse videos by category and find what you love fast.
         </Card.Text>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://i.pinimg.com/originals/48/c6/12/48c61262980bb7dbf2557940d41c7d0b.gif" />
+      <Card.Img style={{ height: '215px', objectFit: 'cover' }} variant="top" src="https://i.pinimg.com/originals/48/c6/12/48c61262980bb7dbf2557940d41c7d0b.gif" />
       <Card.Body>
-        <Card.Title>Watchhistory</Card.Title>
+        <Card.Title>Watch history</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Keep track of videos you've watched and revisit anytime.
         </Card.Text>
       </Card.Body>
     </Card>

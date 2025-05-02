@@ -22,7 +22,7 @@ function Home() {
         <View uploadVideoStatus={uploadVideoStatus}/>
     </div>
     <div className='category col-lg-3'>
-  <Category/>
+  <Category/> 
     </div>
     </div>
     </>
