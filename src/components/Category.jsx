@@ -99,13 +99,13 @@ function Category() {
             item.allVideos.length>0?
             item.allVideos.map((card)=>(<Videocard displaycard={card}/>))
             :
-            <p>Nothing to display</p>
+            <p>Nothing to display (hold 5-10 seconds)</p>
           }
           </Col>
         </Row>
          
         </div>)):
-        <p>Nothing to display</p>
+        <p>Nothing to display (hold 5-10 seconds)</p>
         }
         <Modal show={show} onHide={handleClose}>
         <Modal.Body>
