@@ -99,7 +99,7 @@ function Category() {
             item.allVideos.length>0?
             item.allVideos.map((card)=>(<Videocard displaycard={card}/>))
             :
-            <p>Nothing to display (hold 5-10 seconds)</p>
+            <p>Nothing to display </p>
           }
           </Col>
         </Row>
