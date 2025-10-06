@@ -96,7 +96,7 @@ import 'react-toastify/dist/ReactToastify.css';
             Cancel
           </Button>
           <Button variant="primary" onClick={handleUpload}>
-           <i class='fa-solid fa-film me-2 text-warning'></i> Upload</Button>
+           <i class='fa-solid fa-film me-2 text-warning'></i> Upload now</Button>
         </Modal.Footer>
       </Modal>
       <ToastContainer position='top-center' theme='colored'  />
